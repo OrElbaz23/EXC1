@@ -5,46 +5,47 @@ html{
 
 body {
     color:gray;
-    font-family:Arial, Helvetica, sans-serif;
     font-size: 103%;
     background: #f3eeee;
     margin: 0;
     padding: 0;
-    
+}
+ 
+body,ul{
+    font-family: Arial, Helvetica, sans-serif;
+}
 
+#vitamin-title,h2,h4{
+    font-family:Garamond,serif;  
 }
 
 #vitamin-title{
     color:  rgb(122,220,180);
     text-align: center;
-    font-family:Garamond,serif;  
+    
     text-shadow:2px 2px 4px rgb(6, 17, 14);
     font-size: 50px;
 }
 
 
 header {
-
     color:  #e67d8b;
     text-align: center;
     font-family:monaco,Monospace;
     
-    
     h1{
-        font-size: 50px;
-        color:rgb(247, 176, 176);
-      text-shadow:2px 2px 4px rgb(245, 50, 50);
-        padding: 50px;
+    font-size: 50px;
+    color:rgb(247, 176, 176);
+    text-shadow:2px 2px 4px rgb(245, 50, 50);
+    padding: 50px;
     }
     ul{
         display: flex;
         gap: 15px;
         flex-direction: row;
-       
     }
     li{
         list-style: none;
-        font-family:Arial, Helvetica, sans-serif;
         font-size: medium;
         border-radius: 10px; 
         background-color:  rgb(247, 176, 176);
@@ -57,76 +58,70 @@ header {
         padding: 0px 15px; 
         text-decoration: none; 
       }
-     
-  
 }
 
 h4{
-    font-family:Garamond,serif;
-    text-align: left;
     color:#e67da8;
 }
 section{
     text-align: center;
     display: flex;
     border-radius: 10px; 
-      background-color: #f0f0f0; 
-      padding: 20px;
-      margin: 20px;
-      opacity: 0;
-      transition: opacity 1s ease-in-out;
-    
-    
-    
+    background-color: #f0f0f0; 
+    padding: 20px;
+    margin: 20px;
+   
       h2{
         font-size: 40px;
-        font-family:Garamond,serif;
       }
-  
-   
+
 }
+
+section {
+transition: transform 0.3s ease-in-out;
+}
+
 section:hover {
-    opacity: 1;
-  }
+    transform: scale(1.05);
+}
+
+
 
 section#section-one{
-    background:#F3FDE8;
-    h2{   
+background:#F3FDE8;
+h2{   
 color: rgb(231, 80, 80);
-    }
-   
+}  
 }
 
 
 section#section-two{
-    background: #f8e3ea;
-    
-    h2{
-        
-        color: rgb(212, 57, 57);
-        
-            }
-           
+background: #f8e3ea;
+h2{ 
+color: rgb(212, 57, 57);
+}         
 }
+
+
 section#section-three{
     background: #f1e1e1;
     h2{
         color: rgb(165, 55, 55);
-        
+        text-align: center;
             }
 }
 
 section#section-four
 {
-    background:   rgb(241, 218, 218);
-    text-align: left;
-    h2{
-        text-align: center;
-        color: rgb(102, 21, 21);
-            }
-            h3{
-                font-family:Garamond,serif;
-            }
+background: rgb(241, 218, 218);
+text-align: left;
+h2{
+text-align: center;
+color: rgb(102, 21, 21);
+}
+h3{
+font-family:Garamond,serif; }
+
 }
 
     img {
@@ -134,8 +129,7 @@ section#section-four
         height: 300px;
         box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
         margin-left: 16px;
-    
-        
+        float: right;
     }
    
 
@@ -145,10 +139,9 @@ section#section-four
         padding: 15px;
         border: 3px solid rgb(122,220,180) ;
         border-radius: 5px;
-        transition: transform 0.5s;
         width: 200px;
         height: 320px;
-     
+        text-align: center;
  }
  
 
@@ -174,15 +167,14 @@ section#section-four
         background-color: #f0f0f0; 
         padding: 130px;
         margin: 20px;
-        h2{
-            text-align: center;
-            font-size: 30px;
-            font-family:Copperplate, Papyrus, fantasy;
-            color:  rgb(0,208,130);
+    }
+
+    #links{
+    text-align: center;
+    font-size: 30px;
+    font-family:Copperplate, Papyrus, fantasy;
+    color: rgb(0,208,130);
         }
-      
-        
-      }
       
       .link a{
         background-color: #f3e0e0; 
@@ -190,12 +182,9 @@ section#section-four
         padding: 0px 15px; 
         text-decoration: none; 
         font-size: 20px;
-        
       }
        
      
-      
-  
-      .link a:hover {
-        background-color: #f0a9a9; 
-      }
+.link a:hover {
+ background-color: #f0a9a9; 
+}
